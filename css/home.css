@@ -1,4 +1,153 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contentMargin{
+    max-width: 1366px;
+    margin: auto;
+
+}
+
+.background{
+    background: #005C97;
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  
+    background: linear-gradient(to right, #363795, #005C97); 
+}    
+
+.backgroundFilter{
+    background-color: rgba(0, 0,0,0.5);
+    width: 100%;
+}
+
+.contentFirstSection{
+    padding-top: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 472px;
+    color: white;
+}
+
+.contentFirstSection h1{
+    font-size: 70px;
+}
+
+.contentFirstSection p {
+    font-size: 35px;
+    font-weight: 100;
+    line-height: 52.5px;
+    letter-spacing: 1%;
+}
+
+.contentFirstSection p strong{
+    font-weight: 400;
+}
+
+.contentFirstSection button{
+    background: #2C34E3;
+    border-radius: 12px;
+    width: 186px;
+    height: 48px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 21px;
+    cursor: pointer;
+}
+
+.perfilPhoto{
+    width: 400px;
+    border-radius: 50%;
+    filter: grayscale();
+}
+
+.helpYou{
+    margin-top: 128px;
+}
+
+.helpYouText{
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #11C92E;
+    font-size: 20px;
+
+}
+
+.helpYouText b{
+    font-weight: 400;
+}
+
+.skills{
+    color: white;
+    line-height: 47px;
+    font-size: 32px;
+}
+
+.skillSection{
+    margin-top: 29px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding-bottom: 60px;
+}
+
+.titleSkillSection{
+    color: #E2E2E5;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.01em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skillCards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.skillCardContent{
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0,0,0.2);
+    padding: 20px 30px;
+    width: 300px;
+}
+
+.titleSkillCard{
+    font-weight: 400;
+    color: #E2E2E5;
+}
+
+.textSkillCard{
+    font-weight: 200;
+    color: #E2E2E5;
+}
+
+.skillCardContent p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.containerImgSkillCard img:nth-child(2){
+    margin-left: 10px;
+}
+
+
+.imgSkillCard{
+    width: 88px;
+    border-radius: 10px;
 }
