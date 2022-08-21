@@ -55,19 +55,25 @@
     font-size: 20px;
     margin-top: 21px;
     cursor: pointer;
+    box-shadow: inset -20px -20px 60px #2C34E3, inset 20px 20px 60px #2C34E3;
+}
+
+.contentFirstSection button:hover{
+    background: linear-gradient(315deg, #7077fe, #2C34E3);
+    box-shadow:  0px 0px 20px #2C34E3, 0px 0px 20px #2C34E3;
 }
 
 .perfilPhoto{
     width: 400px;
-    border-radius: 50%;
     filter: grayscale();
+    clip-path: circle(50% at 50% 50%);
 }
 
 .helpYou{
     margin-top: 128px;
 }
 
-.helpYouText{
+.sectionText{
     text-transform: uppercase;
     font-weight: 200;
     color: #11C92E;
@@ -75,7 +81,7 @@
 
 }
 
-.helpYouText b{
+.sectionYouText b{
     font-weight: 400;
 }
 
@@ -92,7 +98,7 @@
     align-items: center;
     justify-content: space-around;
     color: white;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 
 .titleSkillSection{
@@ -151,3 +157,58 @@
     width: 88px;
     border-radius: 10px;
 }
+
+.backgroundSecondSection{
+    background-color: #E2E2E5;
+}
+
+.secondSection{
+    padding-top: 69px;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.secondSection .skills{
+    color: #151620;
+    padding-bottom: 48px;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+}
+
+.projectsContainer{
+    margin-inline: 50px;
+    width: 466px;
+    margin-bottom: 66px;
+}
+
+.imgProjectContainer{
+
+
+}
+.imgProject{
+    width: 450px;
+    height: 306px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 12px;
+}
+
+.titleProject{
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.textProject{
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 200;
+    color: #151620;
+}
+
