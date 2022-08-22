@@ -15,7 +15,7 @@ $(function() {
 	var area1 = $('#firstSelector').offset().top - $(window).height();
 	var area2 = $('#secondSelector').offset().top - $(window).height();
 	var area3 = $('#thirdSelector').offset().top - $(window).height();
-	var area4 = $('#lastSelector').offset().top - $(window).height();
+	var area4 = $('#fourthSeclector').offset().top - $(window).height();
 
 	var selectors = document.querySelectorAll(".line");
 
