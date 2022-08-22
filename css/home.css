@@ -4,10 +4,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    transition: ease-in-out 0.1s;
+}
+
+a:hover{
+    color: rgb(151, 151, 151);
+    transition: ease-in-out 0.1s;
+}
+
+.imgProject:hover{
+    opacity: 0.8;
+    transition: ease-in-out 0.1s;
+}
+
+.lastImgProject:hover{
+    opacity: 0.8;
+    transition: ease-in-out 0.1s;
+}
+
 .contentMargin{
     max-width: 1366px;
     margin: auto;
-
 }
 
 .background{
@@ -78,11 +98,62 @@
     font-weight: 200;
     color: #11C92E;
     font-size: 20px;
-
 }
 
 .sectionYouText b{
     font-weight: 400;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+.waves1 {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+    transform: rotate(180deg);
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
 }
 
 .skills{
@@ -159,11 +230,11 @@
 }
 
 .backgroundSecondSection{
-    background-color: #E2E2E5;
+    background-color: #fff;
 }
 
 .secondSection{
-    padding-top: 69px;
+    padding: 69px 0;
     max-width: 1366px;
     margin: auto;
 }
@@ -186,16 +257,15 @@
     margin-bottom: 66px;
 }
 
-.imgProjectContainer{
-
-
-}
 .imgProject{
     width: 450px;
     height: 306px;
     object-fit: cover;
     object-position: top;
     border-radius: 12px;
+    box-shadow:   -20px 20px 60px #bebebe,
+    20px -20px 60px #ffffff;
+    transition: ease-in-out 0.1s;
 }
 
 .titleProject{
@@ -212,3 +282,89 @@
     color: #151620;
 }
 
+.lastProject{
+    display: flex;
+    justify-content: center;
+}
+
+.lastProjectContainer{
+    width: 1140px;
+}
+
+.lastImgProject{
+    width: 1140px;
+    border-radius: 12px;
+    box-shadow:   -20px 20px 60px #bebebe,
+    20px -20px 60px #ffffff;
+    transition: ease-in-out 0.1s;
+}
+
+.thirdSection{
+    padding-top: 69px;
+    padding-bottom: 20px;
+    max-width: 1366px ;
+    margin: auto;
+}
+
+.backgroundThirdSection{
+    background-color: #181923
+}
+
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgAboutMe{
+    width: 430px;
+    border-radius: 12px;
+    filter: grayscale();
+}
+
+.textAboutMe{
+    padding-top: 20px;
+    width: 580px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F4F4F4F4;
+    font-weight: 200;
+}
+
+.social a{
+    border-radius: 12px;
+    width: 50px;
+    transition: ease-in-out 0.1s;
+    margin-right: 10px;
+}
+
+.social a img{
+    border-radius: 12px;
+    width: 50px;
+}
+
+.social a:last-child{
+    margin-right: 0;
+}
+
+.social a:hover{
+    opacity: 0.5;
+    transition: ease-in-out 0.1s;
+    filter: grayscale();
+}
+
+.backTop{
+    color: #11C92E;
+}
+
+.underFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 50px;
+}
+
+.socialTitle p{
+    color: white;
+    margin-bottom: 10px;
+}
