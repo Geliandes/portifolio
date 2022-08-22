@@ -9,11 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Gelicrash</title>
+
 </head>
 <body>
     <main>
-        <section id="firstSection">
+        <div class="navigationMenu">
+            <a class="line selected" onclick="sectionSelect(0)"href="#firstSelector"></a>
+            <a class="line" onclick="sectionSelect(1)" href="#secondSelector"></a>
+            <a class="line" onclick="sectionSelect(2)" href="#thirdSelector"></a>
+            <a class="line" onclick="sectionSelect(3)" href="#lastSelector"></a>
+        </div>
+        
+        <section class="firstSection" id="firstSelector">
             <div class="background">
                 <div class="backgroundFilter">
                     <div class="contentMargin">
@@ -33,7 +42,7 @@
                             <p class="sectionText">COMO EU <b>posso te ajudar</b>?</p>
                             <p class="skills">Algumas de minhas habilidades</p>
                             <div class="skillSection">
-                                <p class="titleSkillSection">Programação</p>
+                                <p class="titleSkillSection" id="secondSelector">Programação</p>
                                 <div class="skillCards">
                                     <div class="skillCardContent">
                                         <div class="containerImgSkillCard">
@@ -134,7 +143,7 @@
         </div>
 
         <section class="backgroundSecondSection">
-            <div class="secondSection">
+            <div class="secondSection" id="thirdSelector">
                 <p class="sectionText">projetos</p>
                 <p class="skills">Alguns projetos desenvolvidos por mim</p>
                 <div class="projects">
@@ -181,7 +190,7 @@
 
         </section>
 
-        <section class="backgroundThirdSection">
+        <section class="backgroundThirdSection" id="lastSelector">
             <div>
                 <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                     <defs>
@@ -228,7 +237,7 @@
                         </div>
                     </div>
 
-                    <a class="backTop" href="#firstSection">&#9650; Voltar ao topo</a>
+                    <a class="backTop" href="#firstSelector">&#9650; Voltar ao topo</a>
                     
                 </div>
             </footer>

@@ -368,3 +368,29 @@ a:hover{
     color: white;
     margin-bottom: 10px;
 }
+
+.navigationMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 400px;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 98%;
+    z-index: 1;
+}
+
+.line{
+    position: relative;
+    width: 10px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: rgb(165, 165, 165);
+    margin-top: 10px;
+}
+
+.selected{
+    background-color:#2C34E3
+}
