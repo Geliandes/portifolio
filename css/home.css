@@ -581,11 +581,11 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 966px) {
 
     .contentMargin{
-        max-width: 90vw;
+        max-width: 90%;
     }
 
     .secondSection{
-        max-width: 90vw;
+        max-width: 85%;
     }
 
     .thirdSection{
@@ -638,11 +638,12 @@ body::-webkit-scrollbar {
 
     .sectionText{
         font-size: 14px;
-        line-height: 10px;
+        line-height: 20px;
     }
 
     .skills{
         font-size: 16px;
+        line-height: normal;
     }
 
     .projects{
@@ -655,6 +656,9 @@ body::-webkit-scrollbar {
 
     .skillSection{
         margin-top: 0;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
     }
 
     .titleSkillSection{
@@ -668,6 +672,8 @@ body::-webkit-scrollbar {
     .imgSkillCard{
         width: 20vw;
     }
+
+    
 
     .skillCardContent p{
         font-size: 16px;
@@ -685,4 +691,73 @@ body::-webkit-scrollbar {
     .titleSkillCard{
         padding: 15px;
     }
+
+    .projectsContainer{
+        width: 100%;
+    }
+
+    .imgProject{
+        width: 100%;
+        height: 100%;
+    }
+
+    .secondSection .skills{
+        padding-bottom: 10px;
+    }
+
+    .titleProject{
+        font-size: 16px;
+    }
+
+    .textProject{
+        font-size: 14px;
+    }
+
+    .aboutTextContainer{
+        width: 100%;
+    }
+
+    .textAboutMe{
+        width: 95%;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .imgAboutMe{
+        width: 80%;
+    }
+
+    .imgAboutMeContainer{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .underFooter{
+        padding-top: 20px;
+    }
+
+    .socialTitle p{
+        font-size: 13px;
+        font-weight: 300;
+
+    }
+
+    .navigationMenu{
+        left: 97%;
+    }
+
+    .line{
+        width: 8px;
+        height: 7vh;
+    }
+
+    .thirdSection{
+        padding-top: 20px;
+    }
+
+    .secondSection{
+        padding: 20px 0;
+    }
+
 }
