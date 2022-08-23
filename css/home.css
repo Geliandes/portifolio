@@ -205,7 +205,6 @@ body::-webkit-scrollbar {
 }
 
 .skillCardContent{
-    width: 380px;
     height: 380px;
     display: flex;
     flex-direction: column;
@@ -306,7 +305,7 @@ body::-webkit-scrollbar {
 }
 
 .lastImgProject{
-    width: 1140px;
+    width: 100%;
     border-radius: 12px;
     box-shadow:   -20px 20px 60px #bebebe,
     20px -20px 60px #ffffff;
@@ -407,4 +406,283 @@ body::-webkit-scrollbar {
 
 .selected{
     background-color:#2C34E3
+}
+
+@media screen and (max-width: 1628px) {
+
+    .contentMargin{
+        max-width: 1100px;
+    }
+
+    .secondSection{
+        max-width: 1100px;
+    }
+
+    .thirdSection{
+        max-width: 1100px;
+    }
+
+    .contentFirstSection h1{
+        font-size: 60px;
+    }
+
+    .perfilPhoto{
+        width: 300px;
+    }
+
+    .contentFirstSection p{
+        font-size: 30px;
+    }
+
+    .skills{
+        font-size: 30px;
+    }
+
+    .textAboutMe{
+        font-size: 18px;
+    }
+
+    .social a img{
+        width: 35px;
+    }
+
+    .social a {
+        margin-right: 5px;
+    }
+
+    .socialTitle p{
+        margin-bottom: 5px;
+    }
+
+    .imgAboutMe{
+        width: 400px;
+    }
+
+    .projects{
+        justify-content: space-between;
+    }
+
+    .projectsContainer{
+        margin-inline: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .contentMargin{
+        max-width: 900px;
+    }
+
+    .secondSection{
+        max-width: 900px;
+    }
+
+    .thirdSection{
+        max-width: 900px;
+    }
+
+    .contentFirstSection h1{
+        font-size: 45px;
+    }
+
+    .perfilPhoto{
+        width: 300px;
+    }
+
+    .contentFirstSection p{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .contentFirstSection button{
+        font-size: 18px;
+    }
+
+    .skillCards{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .skillCardContent{
+        justify-content: space-around;
+    }
+
+    .skillCardContent p{
+        font-size: 18px;
+    }
+
+    .skillCardContent{
+        width: 200px;
+        height: 350px;
+    }
+
+    .lastProjectContainer{
+        width: 900px;
+    }
+
+    .lastImgProject{
+        width: 100%;
+    }
+
+    .projectsContainer{
+        margin-inline: 0;
+        width: 400px;
+    }
+
+    .projects{
+        justify-content: space-between;
+    }
+
+    .imgProject{
+        width: 400px;
+        height: 250px;
+        object-fit:cover;
+    }
+
+    .titleProject{
+        font-size: 20px;
+    }
+
+    .skills{
+        font-size: 25px;
+    }
+
+    .sectionText{
+        font-size: 18px;
+    }
+
+    .textAboutMe{
+        font-size: 16px;
+    }
+
+    .social a img{
+        width: 35px;
+    }
+
+    .social a {
+        margin-right: 5px;
+    }
+
+    .socialTitle p{
+        font-size: 14px
+    }
+
+    .imgAboutMe{
+        width: 300px;
+    }
+
+    .backTop{
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 966px) {
+
+    .contentMargin{
+        max-width: 90vw;
+    }
+
+    .secondSection{
+        max-width: 90vw;
+    }
+
+    .thirdSection{
+        max-width: 90vw;
+    }
+
+    .skillCards{
+        grid-template-columns: auto;
+    }
+
+    .contentFirstSection{
+        flex-direction: column-reverse
+    }
+
+    .perfilPhoto{
+        width: 60vw;
+        margin-bottom: 40px;
+    }
+
+    .contentFirstSection h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .contentFirstSection{
+        height: unset;
+        justify-content: center;
+    }
+
+    .contentFirstSection p{
+        font-size: 18px;
+        line-height: 30px;
+
+    }
+
+    .textFirstSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 30vh;
+    }
+
+    .contentFirstSection{
+        height: 60vh;
+    }
+
+    .contentFirstSection button{
+        margin-top: 10vh;
+    }
+
+    .sectionText{
+        font-size: 14px;
+        line-height: 10px;
+    }
+
+    .skills{
+        font-size: 16px;
+    }
+
+    .projects{
+        grid-template-columns: auto;
+    }
+
+    .aboutMe{
+        flex-direction: column;
+    }
+
+    .skillSection{
+        margin-top: 0;
+    }
+
+    .titleSkillSection{
+        margin-top: 3vh;
+    }
+
+    .titleSkillSection{
+        font-size: 18px;
+    }
+
+    .imgSkillCard{
+        width: 20vw;
+    }
+
+    .skillCardContent p{
+        font-size: 16px;
+    }
+
+    .skillCardContent{
+        padding: 15px 20px;
+    }
+
+    .skillCardContent{
+        width: 90%;
+        height: unset
+    }
+
+    .titleSkillCard{
+        padding: 15px;
+    }
 }
