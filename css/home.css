@@ -673,8 +673,6 @@ body::-webkit-scrollbar {
         width: 20vw;
     }
 
-    
-
     .skillCardContent p{
         font-size: 16px;
     }
@@ -758,6 +756,14 @@ body::-webkit-scrollbar {
 
     .secondSection{
         padding: 20px 0;
+    }
+
+    .backTop{
+        font-size: 12px;
+    }
+
+    .social a img{
+        width: 30px
     }
 
 }
