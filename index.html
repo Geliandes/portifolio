@@ -1,253 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/general.css">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/home.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Gelicrash</title>
-
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="navigationMenu">
-            <a class="line selected" onclick="sectionSelect(0)"href="#firstSelector"></a>
-            <a class="line" onclick="sectionSelect(1)" href="#secondSelector"></a>
-            <a class="line" onclick="sectionSelect(2)" href="#thirdSelector"></a>
-            <a class="line" onclick="sectionSelect(3)" href="#fourthSeclector"></a>
-        </div>
-        
-        <section class="firstSection" id="firstSelector">
-            <div class="background">
-                <div class="backgroundFilter">
-                    <div class="contentMargin">
-                        <div class="contentFirstSection">
-                            <div class="textFirstSection">
-                                <h1>Paulo Geliandes da Silva</h1>
-                                <p>Desenvolvedor <strong>Front-end</p>
-                                <p></strong>e <strong>UI Designer </strong>em treinamento</p>
-                                <a target="_blank" href="./Paulo Geliandes da Silva.pdf" dowload="Paulo Geliandes da Silva.pdf">
-                                    <button>Currículo</button>
-                                </a>
-                            </div>
-                            
-                            <img class="perfilPhoto" src="./images/paulo1.jpg">
-                        </div>
-                        <div class="helpYou">
-                            <p class="sectionText">COMO EU <b>posso te ajudar</b>?</p>
-                            <p class="skills">Algumas de minhas habilidades</p>
-                            <div class="skillSection">
-                                <p class="titleSkillSection" id="secondSelector">Programação</p>
-                                <div class="skillCards">
-                                    <div class="skillCardContent">
-                                        <div class="containerImgSkillCard">
-                                            <img class="imgSkillCard" src="./images/html.jpg">
-                                            <img class="imgSkillCard" src="./images/css.jpg">
-                                        </div>
-                                        <p class="titleSkillCard">HTML/CSS</p>
-                                        <p class="textSkillCard">Desenvolvimento de sites completos e fieis aos mais variados designs propostos pelo cliente ou empresa.</p>
-                                    </div>
-
-                                    <div class="skillCardContent">
-                                        <div class="containerImgSkillCard">
-                                            <img class="imgSkillCard" src="./images/javascript.jpg">
-                                        </div>
-                                        <p class="titleSkillCard">JavaScript</p>
-                                        <p class="textSkillCard">Criação de funções mais avançadas em sites WEB com JavaScript Vanilla</p>
-                                    </div>             
-
-                                <div class="skillCardContent">
-                                    <div class="containerImgSkillCard">
-                                        <img class="imgSkillCard" src="./images/nodejs.jpg">
-                                    </div>
-                                    <p class="titleSkillCard">Node.js</p>
-                                    <p class="textSkillCard">Criação de aplicações multidirecionais utilizando packages e APIs</p>
-                                </div>
-
-                                <div class="skillCardContent">
-                                    <div class="containerImgSkillCard">
-                                        <img class="imgSkillCard" src="./images/c.jpg">
-                                    </div>
-                                    <p class="titleSkillCard">C</p>
-                                    <p class="textSkillCard">Manutenção e testes de softwares</p>
-                                </div>
-
-                                <div class="skillCardContent">
-                                    <div class="containerImgSkillCard">
-                                        <img class="imgSkillCard" src="./images/c-sharp.jpg">
-                                    </div>
-                                    <p class="titleSkillCard">C#</p>
-                                    <p class="textSkillCard">Desenvolvimento de aplicações para Windows (Windows Forms) com framework .NET</p>
-                                </div>
-
-                                <div class="skillCardContent">
-                                    <div class="containerImgSkillCard">
-                                        <img class="imgSkillCard" src="./images/python.jpg">
-                                    </div>
-                                    <p class="titleSkillCard">Python</p>
-                                    <p class="textSkillCard">Desenvolvimento de automações utilizando bibliotecas com o Jupyter Notebook</p>
-                                </div>
-
-                            </div>
-
-                                <p class="titleSkillSection">UI/Design</p>
-                                <div class="skillCards">
-                                    <div class="skillCardContent">
-                                        <div class="containerImgSkillCard">
-                                            <img class="imgSkillCard" src="./images/photoshop.jpg">
-                                        </div>
-                                        <p class="titleSkillCard">Photoshop</p>
-                                        <p class="textSkillCard">Criação e edição de imagens</p>
-                                    </div>
-
-                                    <div class="skillCardContent">
-                                        <div class="containerImgSkillCard">
-                                            <img class="imgSkillCard" src="./images/lightroom-cc.jpg">
-                                        </div>
-                                        <p class="titleSkillCard">Lightroom</p>
-                                        <p class="textSkillCard">Edição e tratamento de imagens</p>
-                                    </div>
-
-                                    <div class="skillCardContent">
-                                        <div class="containerImgSkillCard">
-                                            <img class="imgSkillCard" src="./images/figma.jpg">
-                                        </div>
-                                        <p class="titleSkillCard">Figma</p>
-                                        <p class="textSkillCard">Desenvolvimento de Layouts para aplicações desktop, web, mobile e posts para instagram.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>       
-                    </div>  
-                    <div>
-                        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                            <defs>
-                                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                            </defs>
-                                <g class="parallax">
-                                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                                </g>
-                        </svg>
-                    </div>       
-                </div>   
-            </div>   
-        </section>
-    <div id="thirdSelector">
-        <section class="backgroundSecondSection">
-            <div class="secondSection" >
-                <p class="sectionText">projetos</p>
-                <p class="skills">Alguns projetos desenvolvidos por mim</p>
-                <div class="projects">
-                    <a href="https://github.com/Geliandes/pagina_de_captura" class="projectsContainer" target="_blank">
-                        <div class="imgProjectContainer">
-                            <img class="imgProject" src="./images/pagina-de-captura.jpg">
-                        </div>
-                        <p class="titleProject">Página de Captura (HTML/CSS)</p>
-                        <p class="textProject">O projeto "Página de Captura", desenvolvido durante o segundo mês estudando desenvolvimento web. Criado para colocar em prática os conhecimentos adiquiridos sobre HTML e CSS.</p>
-                    </a>
-
-                    <a href="https://github.com/Geliandes/Validador-de-CPF" class="projectsContainer" target="_blank">
-                        <div class="imgProjectContainer">
-                            <img class="imgProject" src="./images/validador-de-cpf.jpg">
-                        </div>
-                        <p class="titleProject">Validador de CPF (HTML/CSS/JS)</p>
-                        <p class="textProject">O projeto "Validador de CPF", desenvolvido durante o primeiro ano estudando desenvolvimento web. Criado para colocar em prática os conhecimentos adiquiridos sobre JS e lógica de programação.</p>
-                    </a>
-                    <a href="https://github.com/Geliandes/Cadastro-de-Produtos-com-JS" target="_blank" class="projectsContainer">
-                        <div class="imgProjectContainer">
-                            <img class="imgProject" src="./images/cadastro-de-produtos.jpg">
-                        </div>
-                        <p class="titleProject">Cadastro de Produtos (HTML/CSS/JS)</p>
-                        <p class="textProject">O projeto "Validador de CPF", desenvolvido durante o primeiro ano estudando desenvolvimento web. Criado para colocar em prática os conhecimentos adiquiridos sobre JS, simulando uma interface para cadastro de produtos.</p>
-                    </a>
-                    <a class="projectsContainer" href="https://github.com/Geliandes/Teste-pratico-SEO-Consultoria-ROCKY" target="_blank">
-                        <div class="imgProjectContainer">
-                            <img class="imgProject" src="./images/rocky.jpg">
-                        </div>
-                        <p class="titleProject">GeliPhotos (HTML/CSS/JS)</p>
-                        <p class="textProject">O projeto "GeliPhotos", desenvolvido durante o primeiro ano estudando desenvolvimento web. Foi desenvolvido como parte do teste de habilidades para ingressar na empresa Rocky.Monks como Analista de SEO - Estágio</p>
-                    </a>
+      <div class="navigationMenu">
+        <a class="line selected" onclick="sectionSelect(0)" href="#firstSelector"></a>
+        <a class="line" onclick="sectionSelect(1)" href="#secondSelector"></a>
+        <a class="line" onclick="sectionSelect(2)" href="#thirdSelector"></a>
+        <a class="line" onclick="sectionSelect(3)" href="#fourthSeclector"></a>
+      </div>
+      <section class="firstSection" id="firstSelector">
+        <div class="background">
+          <div class="backgroundFilter">
+            <div class="contentMargin">
+              <div class="contentFirstSection">
+                <div class="textFirstSection">
+                  <h1>Paulo Geliandes da Silva</h1>
+                  <p>Desenvolvedor <strong>Front-end </p>
+                  <p>
+                    </strong>e <strong>UI Designer </strong>em treinamento </p>
+                  <a target="_blank" href="./Paulo Geliandes da Silva.pdf" dowload="Paulo Geliandes da Silva.pdf">
+                    <button>Currículo</button>
+                  </a>
                 </div>
-                <a class="lastProject" href="https://github.com/Geliandes/Redimensionador-e-Compressor-de-Imagens" target="_blank">
-                    <div class="lastProjectContainer">
-                        <div class="lastProjectImg">
-                            <img class="lastImgProject" src="./images/resize-image.jpg">
-                        </div>
-                        <p class="titleProject">Redimensionador e Compressor de Imagens (JS/NODE.JS)</p>
-                        <p class="textProject">O projeto "Redimensionador e Compressor de Imagens", foi desenvolvido durante os estudos de Node.js. O objetivo desse projeto é possibilitar o redimensionamento e compressão de imagens em lote de forma otimizada (superior a sites da web)</p>
+                <img class="perfilPhoto" src="./images/paulo1.jpg">
+              </div>
+              <div class="helpYou">
+                <p class="sectionText">COMO EU <b>posso te ajudar</b>? </p>
+                <p class="skills">Algumas de minhas habilidades</p>
+                <div class="skillSection">
+                  <p class="titleSkillSection" id="secondSelector">Programação</p>
+                  <div class="skillCards">
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/html.jpg">
+                        <img class="imgSkillCard" src="./images/css.jpg">
+                      </div>
+                      <p class="titleSkillCard">HTML/CSS</p>
+                      <p class="textSkillCard">Desenvolvimento de sites completos e fieis aos mais variados designs propostos pelo cliente ou empresa.</p>
                     </div>
-                </a>
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/javascript.jpg">
+                      </div>
+                      <p class="titleSkillCard">JavaScript</p>
+                      <p class="textSkillCard">Criação de funções mais avançadas em sites WEB com JavaScript Vanilla</p>
+                    </div>
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/nodejs.jpg">
+                      </div>
+                      <p class="titleSkillCard">Node.js</p>
+                      <p class="textSkillCard">Criação de aplicações multidirecionais utilizando packages e APIs</p>
+                    </div>
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/c.jpg">
+                      </div>
+                      <p class="titleSkillCard">C</p>
+                      <p class="textSkillCard">Manutenção e testes de softwares</p>
+                    </div>
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/c-sharp.jpg">
+                      </div>
+                      <p class="titleSkillCard">C#</p>
+                      <p class="textSkillCard">Desenvolvimento de aplicações para Windows (Windows Forms) com framework .NET</p>
+                    </div>
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/python.jpg">
+                      </div>
+                      <p class="titleSkillCard">Python</p>
+                      <p class="textSkillCard">Desenvolvimento de automações utilizando bibliotecas com o Jupyter Notebook</p>
+                    </div>
+                  </div>
+                  <p class="titleSkillSection">UI/Design</p>
+                  <div class="skillCards">
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/photoshop.jpg">
+                      </div>
+                      <p class="titleSkillCard">Photoshop</p>
+                      <p class="textSkillCard">Criação e edição de imagens</p>
+                    </div>
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/lightroom-cc.jpg">
+                      </div>
+                      <p class="titleSkillCard">Lightroom</p>
+                      <p class="textSkillCard">Edição e tratamento de imagens</p>
+                    </div>
+                    <div class="skillCardContent">
+                      <div class="containerImgSkillCard">
+                        <img class="imgSkillCard" src="./images/figma.jpg">
+                      </div>
+                      <p class="titleSkillCard">Figma</p>
+                      <p class="textSkillCard">Desenvolvimento de Layouts para aplicações desktop, web, mobile e posts para instagram.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-        </section>
-
-        <footer class="backgroundThirdSection" >
             <div>
-                <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                        <g class="parallax">
-                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                        </g>
-                </svg>
-            </div> 
-            
-            <footer class="thirdSection" id="fourthSeclector">
-                <div class="aboutMe">
-                    <div class="aboutTextContainer">
-                        <p class="sectionText">sobre mim</p>
-                        <p class="skills">Oii, me chamo Paulo!👋</p>
-                        <p class="textAboutMe">Meu nome é Paulo e sou de Sorocaba - SP (Brasil). Minha jornada como desenvolvedor se iniciou no curso de Desenvolvimento Web Full Stack - ProgramadorBR e posteriormente na Faculdade de Tecnologia de Sorocaba (FATEC-SO) onde aprendi sobre lógica de programação, linguagem C e C# .NET.</p>
-                        <p class="textAboutMe">Através dos estudos, consegui meu estágio na empresa Rocky.Monks, onde pude aprimorar meus conhecimentos sobre SEO e desenvolvimento web por meio do HTML/CSS e JS, implementando e criando soluções através de diversas plataformas como o WordPress, Vtex e TrayCorp.</p>
-                    </div>
-                    <div class="imgAboutMeContainer">
-                        <img class="imgAboutMe" src="./images/paulo.jpg">
-                    </div>
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="thirdSelector">
+        <section class="backgroundSecondSection">
+          <div class="secondSection">
+            <p class="sectionText">projetos</p>
+            <p class="skills">Alguns projetos desenvolvidos por mim</p>
+            <div class="projects">
+              <a href="https://github.com/Geliandes/pagina_de_captura" class="projectsContainer" target="_blank">
+                <div class="imgProjectContainer">
+                  <img class="imgProject" src="./images/pagina-de-captura.jpg">
                 </div>
-
-                <div class="underFooter">
-                    <div class="socialTitle">
-                        <p>Acompanhe-me:</p>
-                        <div class="social">
-                            <a href="https://www.facebook.com/geliandes/" target="_blank">
-                                <img src="./images/facebook.png">
-                            </a>
-                            <a href="https://www.instagram.com/geliandes/" target="_blank">
-                                <img src="./images/instagram.png">
-                            </a>
-                            <a href="https://www.linkedin.com/in/paulo-geliandes/" target="_blank">
-                                <img src="./images/linkedin.png">
-                            </a>
-                            <a href="https://github.com/Geliandes" target="_blank">
-                                <img src="./images/github.png">
-                            </a>
-                        </div>
-                    </div>
-
-                    <a class="backTop" href="#firstSelector">&#9650; Voltar ao topo</a>
-                    
+                <p class="titleProject">Página de Captura (HTML/CSS)</p>
+                <p class="textProject">O projeto "Página de Captura", desenvolvido durante o segundo mês estudando desenvolvimento web. Criado para colocar em prática os conhecimentos adiquiridos sobre HTML e CSS.</p>
+              </a>
+              <a href="https://github.com/Geliandes/Validador-de-CPF" class="projectsContainer" target="_blank">
+                <div class="imgProjectContainer">
+                  <img class="imgProject" src="./images/validador-de-cpf.jpg">
                 </div>
-            </footer>
-
+                <p class="titleProject">Validador de CPF (HTML/CSS/JS)</p>
+                <p class="textProject">O projeto "Validador de CPF", desenvolvido durante o primeiro ano estudando desenvolvimento web. Criado para colocar em prática os conhecimentos adiquiridos sobre JS e lógica de programação.</p>
+              </a>
+              <a href="https://github.com/Geliandes/Cadastro-de-Produtos-com-JS" target="_blank" class="projectsContainer">
+                <div class="imgProjectContainer">
+                  <img class="imgProject" src="./images/cadastro-de-produtos.jpg">
+                </div>
+                <p class="titleProject">Cadastro de Produtos (HTML/CSS/JS)</p>
+                <p class="textProject">O projeto "Validador de CPF", desenvolvido durante o primeiro ano estudando desenvolvimento web. Criado para colocar em prática os conhecimentos adiquiridos sobre JS, simulando uma interface para cadastro de produtos.</p>
+              </a>
+              <a class="projectsContainer" href="https://github.com/Geliandes/Teste-pratico-SEO-Consultoria-ROCKY" target="_blank">
+                <div class="imgProjectContainer">
+                  <img class="imgProject" src="./images/rocky.jpg">
+                </div>
+                <p class="titleProject">GeliPhotos (HTML/CSS/JS)</p>
+                <p class="textProject">O projeto "GeliPhotos", desenvolvido durante o primeiro ano estudando desenvolvimento web. Foi desenvolvido como parte do teste de habilidades para ingressar na empresa Rocky.Monks como Analista de SEO - Estágio</p>
+              </a>
+            </div>
+            <a class="lastProject" href="https://github.com/Geliandes/Redimensionador-e-Compressor-de-Imagens" target="_blank">
+              <div class="lastProjectContainer">
+                <div class="lastProjectImg">
+                  <img class="lastImgProject" src="./images/resize-image.jpg">
+                </div>
+                <p class="titleProject">Redimensionador e Compressor de Imagens (JS/NODE.JS)</p>
+                <p class="textProject">O projeto "Redimensionador e Compressor de Imagens", foi desenvolvido durante os estudos de Node.js. O objetivo desse projeto é possibilitar o redimensionamento e compressão de imagens em lote de forma otimizada (superior a sites da web)</p>
+              </div>
+            </a>
+          </div>
+        </section>
+        <footer class="backgroundThirdSection">
+          <div>
+            <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+          <footer class="thirdSection" id="fourthSeclector">
+            <div class="aboutMe">
+              <div class="aboutTextContainer">
+                <p class="sectionText">sobre mim</p>
+                <p class="skills">Oii, me chamo Paulo!👋</p>
+                <p class="textAboutMe">Meu nome é Paulo e sou de Sorocaba - SP (Brasil). Minha jornada como desenvolvedor se iniciou no curso de Desenvolvimento Web Full Stack - ProgramadorBR e posteriormente na Faculdade de Tecnologia de Sorocaba (FATEC-SO) onde aprendi sobre lógica de programação, linguagem C e C# .NET.</p>
+                <p class="textAboutMe">Através dos estudos, consegui meu estágio na empresa Rocky.Monks, onde pude aprimorar meus conhecimentos sobre SEO e desenvolvimento web por meio do HTML/CSS e JS, implementando e criando soluções através de diversas plataformas como o WordPress, Vtex e TrayCorp.</p>
+              </div>
+              <div class="imgAboutMeContainer">
+                <img class="imgAboutMe" src="./images/paulo.jpg">
+              </div>
+            </div>
+            <div class="underFooter">
+              <div class="socialTitle">
+                <p>Acompanhe-me:</p>
+                <div class="social">
+                  <a href="https://www.facebook.com/geliandes/" target="_blank">
+                    <img src="./images/facebook.png">
+                  </a>
+                  <a href="https://www.instagram.com/geliandes/" target="_blank">
+                    <img src="./images/instagram.png">
+                  </a>
+                  <a href="https://www.linkedin.com/in/paulo-geliandes/" target="_blank">
+                    <img src="./images/linkedin.png">
+                  </a>
+                  <a href="https://github.com/Geliandes" target="_blank">
+                    <img src="./images/github.png">
+                  </a>
+                </div>
+              </div>
+              <a class="backTop" href="#firstSelector">&#9650; Voltar ao topo</a>
+            </div>
+          </footer>
         </footer>
-    </div>
-
+      </div>
     </main>
-
-    <script type="text/javascript" src="./js/general.js"></script>
-    <script type="text/javascript" src="./js/home.js"></script>
-</body>
-
+    <script type="text/javascript" src="./js/home.min.js"></script>
+  </body>
 </html>

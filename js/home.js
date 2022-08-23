@@ -7,8 +7,6 @@ function sectionSelect(selection) {
 	}
 
 	selectors[selection].classList.add('selected')
-
-
 }
 
 $(function() {
