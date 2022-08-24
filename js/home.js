@@ -1,12 +1,12 @@
 $(function() {
-	var area1 = $('#firstSelector').offset().top - $(window).height();
-	var area2 = $('#secondSelector').offset().top - $(window).height();
-	var area3 = $('#thirdSelector').offset().top - $(window).height();
-	var area4 = $('#fourthSeclector').offset().top - $(window).height();
-
 	var selectors = document.querySelectorAll(".line");
 
 	$(window).scroll(function() {
+		var area1 = $('#firstSelector').offset().top - $(window).height();
+		var area2 = $('#secondFix').offset().top - $(window).height();
+		var area3 = $('#thirdSelector').offset().top - $(window).height();
+		var area4 = $('#fourthSeclector').offset().top - $(window).height();
+		
 		if ($(window).scrollTop() >= area1) {
 
 			for (let i = 0; i < selectors.length; i++) {
