@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" as="style">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <script defer src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Paulo Geliandes | Blog</title>
+    <link rel="icon" href="../ico/favicon.png">
+  </head>
+  <header>
+    <nav>
+      <ul id="menu">
+        <a class="optionsMenu" href="../index.html">
+          <li>Home</li>
+          <span class="lineMenu"></span>
+        </a>
+        <a class="optionsMenu" href="../blog.html">
+          <li>Blog</li>
+          <span class="lineMenu"></span>
+        </a>
+        <a class="optionsMenu" href="#aboutMe">
+          <li>Sobre</li>
+          <span class="lineMenu"></span>
+        </a>
+        <a class="optionsMenu" href="">
+          <li>Contato</li>
+          <span class="lineMenu"></span>
+        </a>
+      </ul>
+      <div id="btnMenu" onclick="btnMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menuMobileContainer">
+        <div id="menuMobile">
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="../index.html">
+            <li>Home</li>
+          </a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="../blog.html">
+            <li>Blog</li>
+          </a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="#aboutMe">
+            <li>Sobre</li>
+          </a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="">
+            <li>Contato</li>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class=imgPostBlog>
+      <img src="../images/profundidade-de-bits-exemplo.jpeg">
+    </div>
+    <main>
+      <h1>Profundidade de bits</h1>
+      <h2>O que é e para que serve a profundidade de bits de uma imagem?</h2>
+      <p>A profundidade de bits é o que quantifica <b>quantas cores únicas estão disponíveis na paleta de cores de uma imagem</b> em termos de número de 0's e 1's, ou 'bits', que são utilizados para especificar cada cor. Isso não significa que uma imagem necessariamente utiliza todas essas cores, mas sim que pode especificar suas cores usando esse nível de precisão. Para uma imagem em tons de cinza, a profundidade de bits quantifica quantas gradações únicas de cinza estão disponíveis. <b>Imagens com profundidades de bit maiores podem representar mais tons ou cores </b>já que há mais combinações de 0's e 1's disponíveis para representá-las. </p>
+      <br>
+      <br>
+      <h3>A representação da cor em binário</h3>
+      <p>Se fôssemos pegar o exemplo do modo RGB: o sensor da câmera capta a luz, separa os canais vermelho, verde e azul e traduz a luminância de cada um que chegou até ele para código binário (zeros e uns). <b>É a quantidade de código binário gerado pelo sensor é a que vai determinar a variação de tonalidades que aquele arquivo tem</b>. </p>
+      <br>
+      <br>
+      <div class="imgInsidePost">
+        <img src="../images/colorCode.png">
+      </div>
+      <br>
+      <br>
+      <p>Exemplo: <br>
+        <br>
+      </p>
+      <blockquote>
+        <i>"Se a cor vermelha pudesse ser representada com código binário único, ou zero (0) ou um (1), só há duas possibilidades de tons: 1 para presença de vermelho, 0 para ausência dele."</i>
+      </blockquote>
+      <p>
+        <br>Agora, se a cor vermelha pudesse ser representada por um código binário de 2 bits, isto é, duas unidades (0-0, 0-1,1-0 ou 1-1), você teria quatro tonalidades de vermelho, sendo 0-0 a ausência dele e 1-1 a presença total, e os demais seriam outras variações da cor. <br>
+        <br> Essa escala se segue de maneira que a cada novo bit de informação que é inserido dentro daquele canal, mais tonalidades são possíveis. <br>
+        <br> Assim: <br>
+        <br>
+        <b>Se 3 bits representam cada canal de cor, são 8 tons de cor por canal. Se 4 bits representam cada canal de cor, são 16 tons de cor por canal. E assim por diante.</b>
+        <br>
+        <br> Mas como ainda estamos falando por canal de cor, isso significa que essa quantidade de bits que definem os tons, também serão multiplicadas, no caso do RGB que estamos usando como exemplo, por 3, já que são três cores que compõe esse modo de cor.
+      </p>
+      <br>
+      <br>
+      <h3>Comparação</h3>
+      <p>A tabela a seguir ilustra diferentes tipos de imagens em termos de bits (profundidade de bits), total de cores disponíveis e a nomenclatura normalmente utilizada para designá-las.</p>
+      <br>
+      <table class="t1" width="100%">
+        <tbody>
+          <tr>
+            <th>Bits Por Pixel</th>
+            <th>Número de Cores Disponíveis</th>
+            <th>Nome(s) Comum(ns)</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>Monochrome</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>4</td>
+            <td>CGA</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>16</td>
+            <td>EGA</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>256</td>
+            <td>VGA</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>65536</td>
+            <td>XGA, High Color</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>16777216</td>
+            <td>SVGA, True Color</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>16777216 + Transparência</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>281 Trilhões</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <h3>A quantidade de bits e as possibilidades de cores</h3>
+      <p> A profundidade mais comum em redes sociais, por exemplo, é a de <b>8 bits, o que dá 256 tons para cada canal de cor</b>. No caso RGB, isso significa: <b>256 tons para o vermelho, 256 tons para o verde e 256 tons para o azul</b>, que combinados formam 16.777.216 possibilidades de cor. </p>
+      <br>
+      <br>
+      <div class="imgInsidePost">
+        <img class="imgResized" src="../images/comparacao-de-cores.png">
+      </div>
+      <br>
+      <br>
+      <p> Quando se fotografa em RAW, um formato de “negativo digital”, sem compressão, como acontece com o JPEG, é possível falar em uma profundidade de bits ainda maior: <b>há câmeras que chegam a fotografar em 16 bits, o que dá 65.536 tons dentro de cada canal de cor, e mais de 280 trilhões de possibilidades de cores</b>. <br>
+        <br> Por isso a indicação para quem vai trabalhar com fotografia, o ideal é trabalhar com RAW, já que nesse formato, você tem muito mais informação relacionada à cor que em outros formatos, como o próprio JPEG — cuja compressão gera perda de informações da imagem.
+      </p>
+      <br>
+      <br>
+      <h3>Visualizando a profundidade de bits</h3>
+      <p>Ao mover o seu mouse sobre as profundidades de bits especificadas abaixo a imagem será modificada e mostrará o total de cores disponíveis. A diferença entre 24 bpp e 16 bpp é bem sutil, mas será claramente visível (principalmente na região do verde) se o seu monitor estiver utilizando "true color" ou algo maior (24 ou 32 bpp).</p>
+      <br>
+      <br>
+      <div class="comparacao">
+        <div class="but">
+          <span onmouseover="on('but1')">24 bpp</span>
+        </div>
+        <div class="but">
+          <span onmouseover="on('but2')">16 bpp</span>
+        </div>
+        <div class="but">
+          <span onmouseover="on('but3')">8 bpp</span>
+        </div>
+      </div>
+      <br>
+      <div class="imgInsidePost">
+        <img class="butImg" src="../images/bitdepth_24bpp.jpg">
+        <img class="butImg" src="../images/bitdepth_16bpp.jpg">
+        <img class="butImg" src="../images/bitdepth_8bpp.png">
+      </div>
+      <br>
+      <br>
+      <h3>Dicas úteis</h3>
+      <ul>
+        <li>O olho humano só consegue discernir aproximadamente 10 milhões de cores diferentes, então salvar uma imagem em mais de 24 bpp é exagero se o único propósito futuro for a visualização. Por outro lado, imagens com mais de 24 bpp são muito úteis já que podem passar muito mais tranqüilamente por pós-processamento sem perda de qualidade.</li>
+        <br>
+        <li>Gradações de cores em imagens com menos de 8-bits por canal de cor podem ser vistas claramente no histograma da imagem.</li>
+        <br>
+        <li>A disponibilidade das configurações de profundidade de bits depende do tipo de arquivo utilizado. JPEGs e TIFFs padrão só podem utilizar 8-bits e 16-bits por canal, respectivamente.</li>
+      </ul>
+    </main>
+    <script defer src="../js/general.js"></script>
+    <script defer src="../js/post.js"></script>
+  </body>
+  <footer class="backgroundThirdSection">
+    <div class="thirdSection" id="fourthSeclector">
+      <div class="aboutMe" id=aboutMe>
+        <div class="aboutTextContainer">
+          <p class="sectionText">sobre mim</p>
+          <p class="skills">Oii, me chamo Paulo!👋</p>
+          <p class="textAboutMe">Meu nome é Paulo e sou de Sorocaba - SP (Brasil). Minha jornada como desenvolvedor se iniciou no curso de Desenvolvimento Web Full Stack - ProgramadorBR e posteriormente na Faculdade de Tecnologia de Sorocaba (FATEC-SO) onde aprendi sobre lógica de programação, linguagem C e C# .NET.</p>
+          <p class="textAboutMe">Através dos estudos, consegui meu estágio na empresa Rocky.Monks, onde pude aprimorar meus conhecimentos sobre SEO e desenvolvimento web por meio do HTML/CSS e JS, implementando e criando soluções através de diversas plataformas como o WordPress, Vtex e TrayCorp.</p>
+        </div>
+        <div class="imgAboutMeContainer">
+          <img loading="lazy" class="imgAboutMe" src="../images/paulo.jpg">
+        </div>
+      </div>
+      <div class="underFooter">
+        <div class="socialTitle">
+          <p>Acompanhe-me:</p>
+          <div class="social">
+            <a href="https://www.facebook.com/geliandes/" target="_blank">
+              <img loading="lazy" src="../images/facebook.png">
+            </a>
+            <a href="https://www.instagram.com/geliandes/" target="_blank">
+              <img loading="lazy" src="../images/instagram.png">
+            </a>
+            <a href="https://www.linkedin.com/in/paulo-geliandes/" target="_blank">
+              <img loading="lazy" src="../images/linkedin.png">
+            </a>
+            <a href="https://github.com/Geliandes" target="_blank">
+              <img loading="lazy" src="../images/github.png">
+            </a>
+          </div>
+        </div>
+        <a class="backTop" href="#">&#9650; Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
+</html>
