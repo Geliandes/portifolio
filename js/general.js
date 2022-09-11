@@ -6,15 +6,10 @@ function btnMenu(){
         button.classList.remove('btnActive');
         button.classList.add("opened");
         menuMobile.style.width="0%";
-        setTimeout(()=>{
-            button.removeAttribute('style');
-        },1000);
-        
     } else{
         button.classList.add('btnActive');
         button.classList.remove("opened");
         menuMobile.style.width="100%";
-        button.style.backgroundColor="unset";
     }
 }
 
