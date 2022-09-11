@@ -4,104 +4,140 @@
     font-family: "Poppins", sans-serif;
   }
   
-main{
+  main {
     padding-bottom: 95px;
     width: 80%;
     margin: 0 auto;
-}
-
-h1{
+  }
+  
+  h1 {
     text-align: center;
     padding-top: 20px;
-}
-
-h2{
+  }
+  
+  h2 {
     text-align: center;
     font-weight: 400;
     color: rgb(87, 87, 87);
     padding-bottom: 30px;
-}
-
-h3{
+  }
+  
+  h3 {
     font-size: 20px;
-}
-
-main p{
+  }
+  
+  main p {
     font-size: 16px;
     line-height: 25px;
     font-weight: 300;
-}
-
-main li{
+  }
+  
+  main li {
     font-size: 16px;
     line-height: 25px;
     font-weight: 300;
-}
-
-table{
+  }
+  
+  table {
     margin: 0 auto;
-}
-tbody{
+  }
+  tbody {
     color: white;
-    background-color: #242526 ;
+    background-color: #242526;
     text-align: center;
-}
-
-.imgPostBlog{
+  }
+  
+  .imgPostBlog {
     padding-top: 74px;
     width: 100%;
-}
-
-.imgPostBlog img{
+  }
+  
+  .imgPostBlog img {
     width: 100%;
-}
-
-.imgInsidePost{
+  }
+  
+  .imgInsidePost {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-}
-
-.imgResized{
+  }
+  
+  .imgResized {
     width: 100%;
-}
-
-.comparacao{
+  }
+  
+  .comparacao {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-.but{
+  }
+  .but {
     color: grey;
-}
-
-.but:first-child{
+  }
+  
+  .but:first-child {
     color: black;
-}
-
-.but:hover{
+  }
+  
+  .but:hover {
     cursor: pointer;
-
-}
-
-.butImg{
-    display: none;
+  }
+  
+  .positionRelative{
+    position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
+    height: 250px;
+  }
+
+  .butImg {
+    position: absolute;
+    height: 100%;
     border-radius: 20px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44); 
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44);
+  }
+  
+.imgVisible{
+  animation-name: imgVisible;
+  animation-duration: 2s;
+  animation-timing-function: initial;
+  animation-fill-mode: forwards;
+  animation-iteration-count: initial;
 }
 
-.butImg:first-child{
-    display: block;
+@keyframes imgVisible{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
-blockquote{
+.imgInvisible{
+  animation-name: imgInvisible;
+  animation-duration: 4s;
+  animation-timing-function: initial;
+  animation-fill-mode: forwards;
+  animation-iteration-count: initial;
+}
+
+@keyframes imgInvisible{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+  
+  blockquote {
     color: rgb(58, 58, 58);
-}
-
-@media screen and (max-width: 966px) {
-    .imgPostBlog{
-        padding-top: 65px;
-    }  
-}
+  }
+  
+  @media screen and (max-width: 966px) {
+    .imgPostBlog {
+      padding-top: 65px;
+    }
+  }
+  

@@ -1,220 +1,227 @@
-.sectionText {
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+  }
+  
+  .sectionText {
 	text-transform: uppercase;
 	font-weight: 200;
 	color: #11c92e;
 	font-size: 20px;
-}
-
-.skills {
+  }
+  
+  .skills {
 	color: white;
 	line-height: 47px;
 	font-size: 32px;
-}
-
-.thirdSection {
+  }
+  
+  .thirdSection {
 	padding-top: 69px;
 	padding-bottom: 20px;
 	max-width: 1366px;
 	margin: auto;
-}
-
-.backgroundThirdSection {
+  }
+  
+  .backgroundThirdSection {
 	background-color: #181923;
-}
-
-.aboutMe {
+  }
+  
+  .aboutMe {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-}
-
-.imgAboutMe {
+  }
+  
+  .imgAboutMe {
 	width: 430px;
 	border-radius: 12px;
 	filter: grayscale();
-}
-
-.textAboutMe {
+  }
+  
+  .textAboutMe {
 	padding-top: 20px;
 	width: 580px;
 	font-size: 20px;
 	line-height: 30px;
 	color: #f4f4f4f4;
 	font-weight: 200;
-}
-
-.social a {
+  }
+  
+  .social a {
 	border-radius: 12px;
 	width: 50px;
 	transition: ease-in-out 0.1s;
 	margin-right: 10px;
-}
-
-.social a img {
+  }
+  
+  .social a img {
 	border-radius: 12px;
 	width: 50px;
-}
-
-.social a:last-child {
+  }
+  
+  .social a:last-child {
 	margin-right: 0;
-}
-
-.social a:hover {
+  }
+  
+  .social a:hover {
 	opacity: 0.5;
 	transition: ease-in-out 0.1s;
 	filter: grayscale();
-}
-
-.backTop {
+  }
+  
+  .backTop {
 	color: #11c92e;
 	text-decoration: none;
-}
-
-.underFooter {
+  }
+  
+  .underFooter {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 	padding-top: 50px;
-}
-
-.socialTitle p {
+  }
+  
+  .socialTitle p {
 	color: white;
 	margin-bottom: 10px;
-}
-
-@media screen and (max-width: 1628px) {
+  }
+  
+  @media screen and (max-width: 1628px) {
 	.thirdSection {
-		max-width: 1100px;
+	  max-width: 1100px;
 	}
-
+  
 	.textAboutMe {
-		font-size: 18px;
+	  font-size: 18px;
 	}
-
+  
 	.social a img {
-		width: 35px;
+	  width: 35px;
 	}
-
+  
 	.social a {
-		margin-right: 5px;
+	  margin-right: 5px;
 	}
-
+  
 	.socialTitle p {
-		margin-bottom: 5px;
+	  margin-bottom: 5px;
 	}
-
+  
 	.imgAboutMe {
-		width: 400px;
+	  width: 400px;
 	}
-
+  
 	.skills {
-		font-size: 30px;
+	  font-size: 30px;
 	}
-}
-
-@media screen and (max-width: 1200px) {
+  }
+  
+  @media screen and (max-width: 1200px) {
 	.skills {
-		font-size: 25px;
+	  font-size: 25px;
 	}
-
+  
 	.sectionText {
-		font-size: 18px;
+	  font-size: 18px;
 	}
-
+  
 	.textAboutMe {
-		font-size: 16px;
+	  font-size: 16px;
 	}
-
+  
 	.social a img {
-		width: 35px;
+	  width: 35px;
 	}
-
+  
 	.social a {
-		margin-right: 5px;
+	  margin-right: 5px;
 	}
-
+  
 	.socialTitle p {
-		font-size: 14px;
+	  font-size: 14px;
 	}
-
+  
 	.imgAboutMe {
-		width: 300px;
+	  width: 300px;
 	}
-
+  
 	.backTop {
-		font-size: 14px;
+	  font-size: 14px;
 	}
-
+  
 	.skills {
-		font-size: 25px;
+	  font-size: 25px;
 	}
-
+  
 	.sectionText {
-		font-size: 18px;
+	  font-size: 18px;
 	}
-
+  
 	.thirdSection {
-		max-width: 900px;
+	  max-width: 900px;
 	}
-}
-
-@media screen and (max-width: 966px) {
+  }
+  
+  @media screen and (max-width: 966px) {
 	.thirdSection {
-		max-width: 90vw;
+	  max-width: 90vw;
 	}
-
+  
 	.aboutMe {
-		flex-direction: column;
+	  flex-direction: column;
 	}
-
+  
 	.textAboutMe {
-		width: 95%;
-		margin: auto;
-		font-size: 14px;
+	  width: 95%;
+	  margin: auto;
+	  font-size: 14px;
 	}
-
+  
 	.imgAboutMe {
-		width: 80%;
+	  width: 80%;
 	}
-
+  
 	.imgAboutMeContainer {
-		padding-top: 20px;
-		display: flex;
-		justify-content: center;
+	  padding-top: 20px;
+	  display: flex;
+	  justify-content: center;
 	}
-
+  
 	.underFooter {
-		padding-top: 20px;
+	  padding-top: 20px;
 	}
-
+  
 	.socialTitle p {
-		font-size: 13px;
-		font-weight: 300;
+	  font-size: 13px;
+	  font-weight: 300;
 	}
-
+  
 	.thirdSection {
-		padding-top: 20px;
+	  padding-top: 20px;
 	}
-
+  
 	.thirdSection {
-		max-width: 90vw;
+	  max-width: 90vw;
 	}
-
+  
 	.backTop {
-		font-size: 12px;
+	  font-size: 12px;
 	}
-
+  
 	.social a img {
-		width: 30px;
+	  width: 30px;
 	}
-
+  
 	.skills {
-		font-size: 16px;
-		line-height: normal;
+	  font-size: 16px;
+	  line-height: normal;
 	}
-
+  
 	.sectionText {
-		font-size: 14px;
-		line-height: 20px;
+	  font-size: 14px;
+	  line-height: 20px;
 	}
-}
+  }
+  
