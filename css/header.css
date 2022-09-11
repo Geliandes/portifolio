@@ -1,0 +1,297 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+    z-index: 2;
+}
+body{
+    z-index: 1;
+}
+
+#menu {
+	list-style: none;
+	display: flex;
+	gap: 70px;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+.optionsMenu {
+	color: #fff;
+	font-size: 20px;
+	transition: ease-in-out 0.2s;
+}
+
+.optionsMenu:hover {
+	color: rgba(255, 255, 255, 0.536);
+	cursor: pointer;
+	transition: ease-in-out 0.2s;
+}
+
+.lineMenu {
+	height: 3px;
+	transform: scaleX(0);
+	background-color: rgb(44, 52, 227);
+	border-radius: 10px;
+	display: block;
+}
+
+.optionsMenu:hover>.lineMenu {
+	animation-name: menu;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+#menuMobileContainer{
+    display: none;
+}
+
+
+@keyframes menu {
+	from {
+		transform: scaleX(0);
+	}
+
+	to {
+		transform: scaleX(1);
+	}
+}
+
+@media screen and (max-width: 966px) {
+    .optionsMenu{
+        display: none;
+    }
+
+    #menuMobileContainer{
+        display: block;
+    }
+
+    #menu{
+        background-color: unset;
+    }
+
+    nav{
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+    }
+
+    #btnMenu{
+        position: fixed;
+        width: 100%;
+        background-color: #0000004d;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+        padding: 20px;
+        z-index: 10;
+
+    }
+
+    #btnMenu span{
+        width: 35px;
+        height: 3px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .btnActive span{
+        position: relative;
+    }
+
+    .btnActive span:nth-child(1){
+        animation-name: span1Close;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards; 
+        animation-timing-function: linear;
+    }
+
+    .btnActive span:nth-child(2){
+        animation-name: span2Close;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards; 
+    }
+
+    .btnActive span:nth-child(3){
+        animation-name: span3Close;
+        animation-duration: 0.7s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards; 
+    }
+
+    @keyframes span1Close{
+        0%{
+            top: 0;
+        }
+        30%{
+            top: 11px;
+        }
+        31%{
+            rotate: 0deg;
+        }
+        80%{
+            rotate: 45deg;
+        }
+        100%{
+            rotate: 45deg;
+            top: 11px;
+        }
+    }
+
+    @keyframes span2Close{
+        0%{
+            opacity: 1;
+        }
+        40%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes span3Close{
+        0%{
+            top: 0;
+        }
+        30%{
+            top: -11px;
+        }
+        31%{
+            rotate: 0deg;
+        }
+
+        80%{
+            rotate: -45deg;
+        }
+
+        100%{
+            rotate: -45deg;
+            top: -11px;
+        }
+    }
+
+    .opened span{
+        position: relative;
+    }
+    .opened span:nth-child(1){
+        animation-name: span1Open;
+        animation-duration: 0.7s;
+        animation-fill-mode: forwards; 
+        animation-timing-function: linear;
+        animation-direction: reverse;
+    }
+
+    .opened span:nth-child(2){
+        animation-name: span2Open;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards; 
+        animation-direction: reverse;
+    }
+
+    .opened span:nth-child(3){
+        animation-name: span3Open;
+        animation-duration: 0.7s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-direction: reverse;
+    }
+
+    @keyframes span1Open{
+        0%{
+            top: 0;
+        }
+        30%{
+            top: 11px;
+        }
+        31%{
+            rotate: 0deg;
+        }
+        80%{
+            rotate: 45deg;
+        }
+        100%{
+            rotate: 45deg;
+            top: 11px;
+        }
+    }
+
+    @keyframes span2Open{
+        0%{
+            opacity: 1;
+        }
+        49%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    @keyframes span3Open{
+        0%{
+            top: 0;
+        }
+        30%{
+            top: -11px;
+        }
+        31%{
+            rotate: 0deg;
+        }
+
+        80%{
+            rotate: -45deg;
+        }
+
+        100%{
+            rotate: -45deg;
+            top: -11px;
+        }
+    }
+
+    #menuMobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 70px;
+        gap: 20px;
+        z-index: 10;
+    }
+
+    .optionsMenuMobile{
+        position: relative;
+        color: white;
+        font-weight: 600;
+        list-style: none;
+        font-size: 22px;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+
+    #menuMobileContainer{
+        position: fixed;
+        justify-content: end;
+        align-items: start;
+        background-color: rgb(40, 40, 162);
+        width: 0%;
+        height: 100%;
+        z-index: 2;
+        transition: ease-in-out 1s;
+    }
+}

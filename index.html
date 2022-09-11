@@ -10,11 +10,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" as="style">
     <link rel="stylesheet" href="./css/home.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/general.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
     <script defer src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Paulo Geliandes | Portifólio</title>
     <link rel="icon" href="./ico/favicon.png">
   </head>
+
+<header>
+  <nav>
+    <ul id="menu">
+      <a class="optionsMenu" href="./index.html"><li>Home</li><span class="lineMenu"></span></a>
+      <a class="optionsMenu" href="./blog.html"><li>Blog</li><span class="lineMenu"></span></a>
+      <a class="optionsMenu" href="#aboutMe"><li>Sobre</li><span class="lineMenu"></span></a>
+      <a class="optionsMenu" href=""><li>Contato</li><span class="lineMenu"></span></a>
+    </ul>
+
+    
+      <div id="btnMenu" onclick="btnMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menuMobileContainer">
+        <div id="menuMobile">
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="./index.html"><li>Home</li></a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="./blog.html"><li>Blog</li></a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="#aboutMe"><li>Sobre</li></a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href=""><li>Contato</li></a>
+        </div>
+      
+  </div>
+
+  </nav>
+</header>
+
   <body>
     <main>
       <nav class="navigationMenu">
@@ -180,54 +211,56 @@
         </div>
       </section>
     </main>
-    <footer class="backgroundThirdSection">
-      <div>
-        <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-          <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-          </defs>
-          <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-          </g>
-        </svg>
-      </div>
-      <div class="thirdSection" id="fourthSeclector">
-        <div class="aboutMe">
-          <div class="aboutTextContainer">
-            <p class="sectionText">sobre mim</p>
-            <p class="skills">Oii, me chamo Paulo!👋</p>
-            <p class="textAboutMe">Meu nome é Paulo e sou de Sorocaba - SP (Brasil). Minha jornada como desenvolvedor se iniciou no curso de Desenvolvimento Web Full Stack - ProgramadorBR e posteriormente na Faculdade de Tecnologia de Sorocaba (FATEC-SO) onde aprendi sobre lógica de programação, linguagem C e C# .NET.</p>
-            <p class="textAboutMe">Através dos estudos, consegui meu estágio na empresa Rocky.Monks, onde pude aprimorar meus conhecimentos sobre SEO e desenvolvimento web por meio do HTML/CSS e JS, implementando e criando soluções através de diversas plataformas como o WordPress, Vtex e TrayCorp.</p>
-          </div>
-          <div class="imgAboutMeContainer">
-            <img loading="lazy" class="imgAboutMe" src="./images/paulo.jpg">
-          </div>
-        </div>
-        <div class="underFooter">
-          <div class="socialTitle">
-            <p>Acompanhe-me:</p>
-            <div class="social">
-              <a href="https://www.facebook.com/geliandes/" target="_blank">
-                <img loading="lazy" src="./images/facebook.png">
-              </a>
-              <a href="https://www.instagram.com/geliandes/" target="_blank">
-                <img loading="lazy" src="./images/instagram.png">
-              </a>
-              <a href="https://www.linkedin.com/in/paulo-geliandes/" target="_blank">
-                <img loading="lazy" src="./images/linkedin.png">
-              </a>
-              <a href="https://github.com/Geliandes" target="_blank">
-                <img loading="lazy" src="./images/github.png">
-              </a>
-            </div>
-          </div>
-          <a class="backTop" href="#firstSelector">&#9650; Voltar ao topo</a>
-        </div>
-      </div>
-    </footer>
     <script defer src="./js/home.min.js"></script>
+    <script defer src="./js/general.js"></script>
   </body>
+
+  <footer class="backgroundThirdSection">
+    <div>
+      <svg class="waves1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
+    <div class="thirdSection" id="fourthSeclector">
+      <div class="aboutMe" id=aboutMe>
+        <div class="aboutTextContainer">
+          <p class="sectionText">sobre mim</p>
+          <p class="skills">Oii, me chamo Paulo!👋</p>
+          <p class="textAboutMe">Meu nome é Paulo e sou de Sorocaba - SP (Brasil). Minha jornada como desenvolvedor se iniciou no curso de Desenvolvimento Web Full Stack - ProgramadorBR e posteriormente na Faculdade de Tecnologia de Sorocaba (FATEC-SO) onde aprendi sobre lógica de programação, linguagem C e C# .NET.</p>
+          <p class="textAboutMe">Através dos estudos, consegui meu estágio na empresa Rocky.Monks, onde pude aprimorar meus conhecimentos sobre SEO e desenvolvimento web por meio do HTML/CSS e JS, implementando e criando soluções através de diversas plataformas como o WordPress, Vtex e TrayCorp.</p>
+        </div>
+        <div class="imgAboutMeContainer">
+          <img loading="lazy" class="imgAboutMe" src="./images/paulo.jpg">
+        </div>
+      </div>
+      <div class="underFooter">
+        <div class="socialTitle">
+          <p>Acompanhe-me:</p>
+          <div class="social">
+            <a href="https://www.facebook.com/geliandes/" target="_blank">
+              <img loading="lazy" src="./images/facebook.png">
+            </a>
+            <a href="https://www.instagram.com/geliandes/" target="_blank">
+              <img loading="lazy" src="./images/instagram.png">
+            </a>
+            <a href="https://www.linkedin.com/in/paulo-geliandes/" target="_blank">
+              <img loading="lazy" src="./images/linkedin.png">
+            </a>
+            <a href="https://github.com/Geliandes" target="_blank">
+              <img loading="lazy" src="./images/github.png">
+            </a>
+          </div>
+        </div>
+        <a class="backTop" href="#firstSelector">&#9650; Voltar ao topo</a>
+      </div>
+    </div>
+  </footer>
 </html>
