@@ -82,7 +82,6 @@
     nav {
       display: flex;
       justify-content: end;
-      cursor: pointer;
     }
   
     #btnMenu {
