@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" as="style">
-        <link rel="stylesheet" href="./css/header.css">
-        <link rel="stylesheet" href="./css/general.css">
-        <link rel="stylesheet" href="./css/contato.css">
-        <link rel="stylesheet" href="./css/footer.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
-        <script defer src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <title>Paulo Geliandes | Blog</title>
-        <link rel="icon" href="./ico/favicon.png">
-      </head>
-
-      <header>
-        <nav>
-          <ul id="menu">
-            <a class="optionsMenu" href="./index.html"><li>Home</li><span class="lineMenu"></span></a>
-            <a class="optionsMenu" href="./blog.html"><li>Blog</li><span class="lineMenu"></span></a>
-            <a class="optionsMenu" href="#aboutMe"><li>Sobre</li><span class="lineMenu"></span></a>
-            <a class="optionsMenu" href="./contato.html"><li>Contato</li><span class="lineMenu"></span></a>
-          </ul>
-      
-          
-            <div id="btnMenu" onclick="btnMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div id="menuMobileContainer">
-              <div id="menuMobile">
-                <a class="optionsMenuMobile" onclick="closeMenu()" href="./index.html"><li>Home</li></a>
-                <a class="optionsMenuMobile" onclick="closeMenu()" href="./blog.html"><li>Blog</li></a>
-                <a class="optionsMenuMobile" onclick="closeMenu()" href="#aboutMe"><li>Sobre</li></a>
-                <a class="optionsMenuMobile" onclick="closeMenu()" href="./contato.html"><li>Contato</li></a>
-              </div>
-            </div>
-        </nav>
-      </header>
-      <body>
-      <div class="centerContact">
-        <section>
-            
-            <h2>Contato</h2>
-            <form action="https://api.staticforms.xyz/submit" method="post">
-                <label>Nome</label>
-                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
-                <label>Mensagem</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-
-                <input type="hidden" name="accessKey" value="c3a1e1dd-b75f-4fa7-a125-8413435c0379">
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
-            </form>
-        </section>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" as="style">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <script defer src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Paulo Geliandes | Blog</title>
+    <link rel="icon" href="./ico/favicon.png">
+  </head>
+  <header>
+    <nav>
+      <ul id="menu">
+        <a class="optionsMenu" href="./index.html">
+          <li>Home</li>
+          <span class="lineMenu"></span>
+        </a>
+        <a class="optionsMenu" href="./blog.html">
+          <li>Blog</li>
+          <span class="lineMenu"></span>
+        </a>
+        <a class="optionsMenu" href="#aboutMe">
+          <li>Sobre</li>
+          <span class="lineMenu"></span>
+        </a>
+        <a class="optionsMenu" href="./contato.html">
+          <li>Contato</li>
+          <span class="lineMenu"></span>
+        </a>
+      </ul>
+      <div id="btnMenu" onclick="btnMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menuMobileContainer">
+        <div id="menuMobile">
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="./index.html">
+            <li>Home</li>
+          </a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="./blog.html">
+            <li>Blog</li>
+          </a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="#aboutMe">
+            <li>Sobre</li>
+          </a>
+          <a class="optionsMenuMobile" onclick="closeMenu()" href="./contato.html">
+            <li>Contato</li>
+          </a>
         </div>
-
-      <script defer src="./js/general.js"></script>
-
-    
-</body>
-<footer class="backgroundThirdSection">
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="centerContact">
+      <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+          <label>Nome</label>
+          <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+          <label>Mensagem</label>
+          <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+          <input type="hidden" name="accessKey" value="c3a1e1dd-b75f-4fa7-a125-8413435c0379">
+          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+        </form>
+      </section>
+    </div>
+    <script defer src="./js/general.js"></script>
+  </body>
+  <footer class="backgroundThirdSection">
     <div class="thirdSection" id="fourthSeclector">
       <div class="aboutMe" id=aboutMe>
         <div class="aboutTextContainer">

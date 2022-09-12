@@ -48,7 +48,6 @@
   }
   
   .imgPostBlog {
-    padding-top: 74px;
     width: 100%;
   }
   
@@ -87,8 +86,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 250px;
+    height: 25vw;
   }
 
   .butImg {
@@ -135,9 +133,4 @@
     color: rgb(58, 58, 58);
   }
   
-  @media screen and (max-width: 966px) {
-    .imgPostBlog {
-      padding-top: 65px;
-    }
-  }
   
