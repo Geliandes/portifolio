@@ -73,9 +73,17 @@
   .backTop {
     text-decoration: none;
   }
+
   @media screen and (max-width: 1100px) {
     #blogGrid {
       grid-template-columns: 40% 40%;
+    }
+    
+  }
+
+  @media screen and (max-width: 967px){
+    main{
+      padding-top: 50px;
     }
   }
   
@@ -83,5 +91,6 @@
     #blogGrid {
       grid-template-columns: 80%;
     }
+
   }
   
