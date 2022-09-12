@@ -128,9 +128,7 @@
     opacity: 0;
   }
 }
-  
-  blockquote {
-    color: rgb(58, 58, 58);
-  }
-  
-  
+
+blockquote {
+  color: rgb(58, 58, 58);
+}
