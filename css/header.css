@@ -17,7 +17,7 @@
     display: flex;
     gap: 70px;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     backdrop-filter: blur(20px);
   }
