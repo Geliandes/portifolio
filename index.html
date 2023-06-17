@@ -78,11 +78,14 @@
       document.head.appendChild(script);
     }
 
-    if (window.addEventListener) {
-      window.addEventListener('load', loadGA, false);
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', loadGA);
+    function handleUserInteraction() {
+      window.removeEventListener('scroll', handleUserInteraction);
+      window.removeEventListener('click', handleUserInteraction);
+      loadGA();
     }
+
+    window.addEventListener('scroll', handleUserInteraction, { once: true });
+    window.addEventListener('click', handleUserInteraction, { once: true });
   </script>
   <main>
     <nav class="navigationMenu">
