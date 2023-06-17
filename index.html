@@ -15,14 +15,25 @@
   <link rel="stylesheet" href="./css/general.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TV99VLV');</script>
+  <script>
+    function loadScript() {
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TV99VLV';
+      script.async = true;
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(script, firstScript);
+    }
+
+    function handleUserInteraction() {
+      loadScript();
+      window.removeEventListener('click', handleUserInteraction);
+      window.removeEventListener('scroll', handleUserInteraction);
+    }
+
+    window.addEventListener('click', handleUserInteraction);
+    window.addEventListener('scroll', handleUserInteraction);
+  </script>
+
   <!-- End Google Tag Manager -->
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <title>Paulo Geliandes | Portifólio</title>
@@ -76,6 +87,7 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV99VLV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+
   <main>
     <nav class="navigationMenu">
       <a class="line selected" href="#firstSelector"></a>
