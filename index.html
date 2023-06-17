@@ -76,31 +76,16 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV99VLV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <!-- Google tag (gtag.js) -->
 
   <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KTHKS8W"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0WESSEEVS9"></script>
   <script>
-    function loadGA() {
-      var script = document.createElement('script');
-      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-7NG69FB98G';
-      script.async = true;
-      script.onload = function () {
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-7NG69FB98G');
-      };
-      document.head.appendChild(script);
-    }
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    function handleUserInteraction() {
-      window.removeEventListener('scroll', handleUserInteraction);
-      window.removeEventListener('click', handleUserInteraction);
-      loadGA();
-    }
-
-    window.addEventListener('scroll', handleUserInteraction, { once: true });
-    window.addEventListener('click', handleUserInteraction, { once: true });
+    gtag('config', 'G-0WESSEEVS9');
   </script>
   <main>
     <nav class="navigationMenu">
