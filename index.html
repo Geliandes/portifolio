@@ -64,13 +64,25 @@
 
 <body>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7NG69FB98G"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function loadGA() {
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-7NG69FB98G';
+      script.async = true;
+      script.onload = function () {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-7NG69FB98G');
+      };
+      document.head.appendChild(script);
+    }
 
-    gtag('config', 'G-7NG69FB98G');
+    if (window.addEventListener) {
+      window.addEventListener('load', loadGA, false);
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', loadGA);
+    }
   </script>
   <main>
     <nav class="navigationMenu">
