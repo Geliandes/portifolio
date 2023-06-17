@@ -41,21 +41,4 @@ function executeHeavyScript() {
   console.log(`Fim do script pesado. Tempo total: ${endTime - startTime}ms.`);
 }
 
-// Variável para verificar se o script já foi acionado
-let scriptExecuted = false;
-
-// Função para lidar com a interação do usuário
-function handleUserInteraction() {
-  if (!scriptExecuted) {
-    executeHeavyScript();
-    scriptExecuted = true;
-
-    // Remove os event listeners para evitar repetições
-    window.removeEventListener('click', handleUserInteraction);
-    window.removeEventListener('scroll', handleUserInteraction);
-  }
-}
-
-// Adiciona event listeners para verificar a interação do usuário
-window.addEventListener('click', handleUserInteraction);
-window.addEventListener('scroll', handleUserInteraction);
+executeHeavyScript();
