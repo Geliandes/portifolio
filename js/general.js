@@ -28,15 +28,6 @@ function performHeavyTask() {
   return result;
 }
 
-function performHeavyTask() {
-  // Simula um processamento intensivo
-  let result = 0;
-  for (let i = 0; i < 1000000000; i++) {
-    result += i;
-  }
-  return result;
-}
-
 function executeHeavyScript() {
   console.log('Início do script pesado.');
   const startTime = performance.now();
@@ -50,30 +41,21 @@ function executeHeavyScript() {
   console.log(`Fim do script pesado. Tempo total: ${endTime - startTime}ms.`);
 }
 
-// Função para verificar se o elemento está visível no viewport
-function isElementInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
+// Variável para verificar se o script já foi acionado
+let scriptExecuted = false;
 
 // Função para lidar com a interação do usuário
 function handleUserInteraction() {
-  const heavyScriptElement = document.getElementById('heavy-script');
-
-  if (isElementInViewport(heavyScriptElement)) {
-    // Se o elemento estiver visível, executa o script pesado
+  if (!scriptExecuted) {
     executeHeavyScript();
+    scriptExecuted = true;
 
-    // Remove o event listener para evitar repetições
+    // Remove os event listeners para evitar repetições
+    window.removeEventListener('click', handleUserInteraction);
     window.removeEventListener('scroll', handleUserInteraction);
   }
 }
 
-// Adiciona um event listener para verificar a interação do usuário
+// Adiciona event listeners para verificar a interação do usuário
+window.addEventListener('click', handleUserInteraction);
 window.addEventListener('scroll', handleUserInteraction);
