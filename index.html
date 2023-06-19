@@ -15,8 +15,30 @@
   <link rel="stylesheet" href="./css/general.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
   <!-- Google Tag Manager -->
+  <script async>
+    function loadScript1() {
+      var script = document.createElement('script');
+      script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TV99VLV';
+      script.async = true;
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(script, firstScript);
 
+      var script1 = document.createElement('script');
+      script1.src = './js/general.js'
+      script1.async = true;
+      var secondScript = document.getElementsByTagName('script1')[0];
+      secondScript.parentNode.insertBefore(script1, secondScript);
+    }
 
+    function handleUserInteraction1() {
+      loadScript1();
+      window.removeEventListener('click', handleUserInteraction1);
+      window.removeEventListener('scroll', handleUserInteraction1);
+    }
+
+    window.addEventListener('click', handleUserInteraction1);
+    window.addEventListener('scroll', handleUserInteraction1);
+  </script>
 
   <!-- End Google Tag Manager -->
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -237,7 +259,6 @@
     </section>
   </main>
   <script src="./js/home.min.js"></script>
-  <script async src="./js/general.js"></script>
 </body>
 <footer class="backgroundThirdSection">
   <div>

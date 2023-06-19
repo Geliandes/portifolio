@@ -19,23 +19,6 @@ function closeMenu() {
   closeMenuOption.click();
 }
 
-function loadScript1() {
-  var script = document.createElement('script');
-  script.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-TV99VLV';
-  script.async = true;
-  var firstScript = document.getElementsByTagName('script')[0];
-  firstScript.parentNode.insertBefore(script, firstScript);
-}
-
-function handleUserInteraction1() {
-  loadScript1();
-  window.removeEventListener('click', handleUserInteraction1);
-  window.removeEventListener('scroll', handleUserInteraction1);
-}
-
-window.addEventListener('click', handleUserInteraction1);
-window.addEventListener('scroll', handleUserInteraction1);
-
 function performHeavyTask() {
   // Simula um processamento intensivo
   let result = 0;
